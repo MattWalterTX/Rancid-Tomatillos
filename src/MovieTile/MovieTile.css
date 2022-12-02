@@ -5,11 +5,15 @@
     width: 10vw;
     height: 32vh;
     border-radius: 10px;
-    background-image: url(https://image.tmdb.org/t/p/original//erl30EcM8b8S84mvw8QXhNIeSfi.jpg);
+    /* background-image: url(https://image.tmdb.org/t/p/original//erl30EcM8b8S84mvw8QXhNIeSfi.jpg); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: 10%;
-    margin-left: 45vw;
-    margin-top: 27vh;
+
+}
+
+.tile-img{
+  width:10vw;
+  height:30vh
 }
