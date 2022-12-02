@@ -4,6 +4,7 @@ import './MovieTile.css'
 const MovieTile = () => {
   return (
     <div className='movie-tile'>
+      
     </div>
   )
 }
