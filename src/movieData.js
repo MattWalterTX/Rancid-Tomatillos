@@ -1,5 +1,5 @@
-const movieData = {
-  "movies": [
+const movieData = 
+   [
     {
       "id": 694919,
       "poster_path": "https://image.tmdb.org/t/p/original//6CoRTJTmijhBLJTUNoVSUNxZMEI.jpg",
@@ -321,6 +321,6 @@ const movieData = {
       "release_date": "2020-03-12"
     }
   ]
-};
+
 
 export default movieData;
