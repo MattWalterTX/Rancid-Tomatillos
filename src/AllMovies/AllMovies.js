@@ -4,7 +4,7 @@ import './AllMovies.css'
 
 const AllMovies = ({movies}) => {
   console.log(movies)
-  const movieTiles = movies.map(movie => {
+  const movieTiles = movies.movies.map(movie => {
     return (
       <MovieTile />
     )
