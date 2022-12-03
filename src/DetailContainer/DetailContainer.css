@@ -1,4 +1,25 @@
+
 .movie-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  /* opacity: 50%; */
+
 }
+
+/* .movie-container::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.35);
+} */
+

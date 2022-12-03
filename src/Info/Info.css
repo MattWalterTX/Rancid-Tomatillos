@@ -1,0 +1,16 @@
+@import url('https: //fonts.googleapis.com/css?family=Notable:400&display=swap');
+
+.info {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  /* line-height: 1; */
+  /* letter-spacing: -.02em; */
+  color: rgba(205, 188, 32);
+  -webkit-text-stroke: 1px black;
+}
+
+h3 {
+  margin: 5px;
+}

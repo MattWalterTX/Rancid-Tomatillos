@@ -6,11 +6,11 @@ const Info = ({title, rating, release}) => {
   
 
   return (
-    <div>
-      <h4>Movie Details Here</h4>
-      <p>Title: {title}</p>
-      <p>Average Rating: {rating.toFixed(1)}</p>
-      <p>Release Date: {release}</p>
+    <div className='info'>
+      <h3>Movie Details Here</h3>
+      <h3>Title: {title}</h3>
+      <h3>Average Rating: {rating.toFixed(1)}</h3>
+      <h3>Release Date: {release}</h3>
     </div>
   )
 }

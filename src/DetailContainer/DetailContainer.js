@@ -15,11 +15,13 @@ const DetailContainer = () => {
   };
 
   return (
-    <div className='movie-container' >
-      <MovieTile 
+    <div className='movie-container' style={{
+      backgroundImage: 'url(' + movieData[3].backdrop_path + ')'
+    }}>
+      {/* <MovieTile
         poster={movieData[3].poster_path}
         key={movieData[3].id}
-      />
+      /> */}
       <Info 
         title={movieData[3].title}
         rating={movieData[3].average_rating}
