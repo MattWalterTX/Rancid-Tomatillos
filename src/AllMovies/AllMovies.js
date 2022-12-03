@@ -1,9 +1,11 @@
 import React from 'react';
 import MovieTile from '../MovieTile/MovieTile';
+import SingleView from '../SingleView/SingleView';
 import './AllMovies.css'
 
 const AllMovies = ({movies, showMore}) => {
   const movieTiles = movies.movies.map(movie => {
+
     return (
       <MovieTile 
         poster={movie.poster_path}
@@ -12,11 +14,12 @@ const AllMovies = ({movies, showMore}) => {
         showMore={showMore}
       />
     )
-  }) 
+  })
 
     return (
       <div className='all-movies'>
         {movieTiles}
+        <SingleView  />
       </div>
     )
 
