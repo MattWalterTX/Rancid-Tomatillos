@@ -1,0 +1,10 @@
+.single-view {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  contain: content;
+  display: flex;
+  width: 85vw;
+  justify-content: center;
+  align-items: center;
+}
