@@ -19,7 +19,6 @@ const AllMovies = ({movies, showMore}) => {
     return (
       <div className='all-movies'>
         {movieTiles}
-        <SingleView  />
       </div>
     )
 

@@ -18,6 +18,11 @@ class App extends Component {
   showMore = (id) => {
     const selectedMovie = this.state.movies.filter(movie => movie.id === id)
     this.setState({movies: selectedMovie})
+    // render() {
+    //   return (
+    //   <SingleView />
+    //   )
+    // }
   }
 
   componentDidMount = () => {
@@ -39,7 +44,7 @@ class App extends Component {
 
         <h1> Rotten Tomitillos </h1>
         <AllMovies movies={this.state} showMore={this.showMore} />
-
+        {(this.state.movies.length === 1) && <SingleView movie={this.state.movies[0]} />}
       </main>
     )
   }
