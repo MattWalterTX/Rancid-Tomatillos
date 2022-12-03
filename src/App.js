@@ -12,12 +12,17 @@ class App extends Component {
     }
     
   }
+
+  showMore = (id) => {
+    const selectedMovie = this.state.movies.filter(movie => movie.id === id)
+    this.setState({movies: selectedMovie})
+  }
   
   render() {
     return (
       <main className='App'>
         <h1> Rotten Tomitillos </h1>
-        <AllMovies movies={this.state} />
+        <AllMovies movies={this.state} showMore={this.showMore} />
       </main>
     )
   }
