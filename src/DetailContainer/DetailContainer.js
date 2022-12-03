@@ -11,8 +11,8 @@ const DetailContainer = () => {
     const dateNums = release.split("-");
     const year = dateNums.shift();
     dateNums.push(year);
-    return dateNums.join('/');
-};
+    return dateNums.join('~');
+  };
 
   return (
     <div className='movie-container' >
