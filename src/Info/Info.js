@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import './Info.css'
 
 const Info = (props) => {
-  console.log(props)
   return (
     <div className='info'>
       <h3>Movie Details Here</h3>

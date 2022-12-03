@@ -18,7 +18,7 @@ const DetailContainer = (props) => {
     <div className='movie-container' style={{
       backgroundImage: 'url(' + props.movie.movie.backdrop_path + ')'
     }}>
-      <Info movie={props} />
+      <Info movie={props} makeDate={makeDateDisplay} />
     </div>
   )
 }
