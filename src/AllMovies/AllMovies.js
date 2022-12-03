@@ -3,13 +3,15 @@ import MovieTile from '../MovieTile/MovieTile';
 import SingleView from '../SingleView/SingleView';
 import './AllMovies.css'
 
-const AllMovies = ({movies}) => {
+const AllMovies = ({movies, showMore}) => {
   const movieTiles = movies.movies.map(movie => {
-    // console.log(movie.poster_path)
+
     return (
       <MovieTile 
         poster={movie.poster_path}
+        id={movie.id}
         key={movie.id}
+        showMore={showMore}
       />
     )
   })

@@ -1,11 +1,13 @@
 import React from 'react';
 import './MovieTile.css'
 
-const MovieTile = ({poster}) => {
+const MovieTile = ({id , poster, showMore}) => {
   return (
     <div className='movie-tile' >
-      <img className='tile-img' src={poster} width='100' height='300'></img>
-      
+
+     <button className='tile-button' onClick={() => showMore(id)}><img className='tile-img' src={poster} ></img></button>
+
+
     </div>
   )
 }
