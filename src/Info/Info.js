@@ -2,9 +2,6 @@ import React, { Component } from "react"
 import './Info.css'
 
 const Info = ({title, rating, release}) => {
-
-  
-
   return (
     <div className='info'>
       <h3>Movie Details Here</h3>
