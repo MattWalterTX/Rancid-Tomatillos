@@ -4,7 +4,6 @@ import './AllMovies.css'
 
 const AllMovies = ({movies}) => {
   const movieTiles = movies.movies.map(movie => {
-    console.log(movie.poster_path)
     return (
       <MovieTile 
         poster={movie.poster_path}
