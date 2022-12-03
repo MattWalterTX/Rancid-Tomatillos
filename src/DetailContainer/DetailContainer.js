@@ -6,6 +6,14 @@ import movieData from '../movieData';
 
 
 const DetailContainer = () => {
+
+  const makeDateDisplay = (release) => {
+    const dateNums = release.split("-");
+    const year = dateNums.shift();
+    dateNums.push(year);
+    return dateNums.join('/');
+};
+
   return (
     <div className='movie-container' >
       <MovieTile 
@@ -15,8 +23,8 @@ const DetailContainer = () => {
       <Info 
         title={movieData[3].title}
         rating={movieData[3].average_rating}
-        release={movieData[3].release_date}
-      />
+        release={(makeDateDisplay(movieData[3].release_date))}
+        />
     </div>
   )
 }

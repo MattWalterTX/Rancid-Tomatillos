@@ -1,8 +1,9 @@
 import React, { Component } from "react"
 import './Info.css'
-import movieData from '../movieData';
 
 const Info = ({title, rating, release}) => {
+
+  
 
   return (
     <div>
