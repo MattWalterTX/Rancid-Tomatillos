@@ -11,25 +11,19 @@ class App extends Component {
     this.state = {
       movies:[],
       error:null,
-      selected: []
+      selected: null
     }
     
   }
 
   showMore = (id) => {
-    const selectedMovie = this.state.movies.filter(movie => movie.id === id)
+    const selectedMovie = this.state.movies.find(movie => movie.id === id)
     this.setState({ selected: selectedMovie })
-    // this.setState({movies: selectedMovie})
-    // render() {
-    //   return (
-    //   <SingleView />
-    //   )
-    // }
   }
 
   showAll = () => {
     console.log('SHIT SHIT SHIT')
-    this.setState({ selected: [] })
+    this.setState({ selected: null })
   }
 
   componentDidMount = () => {
@@ -51,7 +45,7 @@ class App extends Component {
 
         <h1> Rotten Tomitillos </h1>
         {/* <AllMovies movies={this.state} showMore={this.showMore} /> */}
-        {(this.state.selected.length === 1) ? <SingleView movie={this.state.movies[0]} showAll={this.showAll} /> : <AllMovies movies={this.state} showMore={this.showMore} />}
+        {(this.state.selected) ? <SingleView movie={this.state.selected} showAll={this.showAll} /> : <AllMovies movies={this.state} showMore={this.showMore} />}
       </main>
     )
   }
