@@ -10,8 +10,10 @@ class App extends Component {
     super();
     this.state = {
       movies:[],
+
       error:null,
       selected: null
+
     }
     
   }
@@ -26,26 +28,31 @@ class App extends Component {
     this.setState({ selected: null })
   }
 
+  
+
   componentDidMount = () => {
     // console.log('App, componentDidMount')
     fetch('https://rancid-tomatillos.herokuapp.com/api/v2/movies')
       .then((response) => response.json())
       .then((data) => { 
         this.setState({ movies: data.movies })
+
         // console.log('the state',this.state)
+
       })
-      // .catch((error) => {
-      //   this.setState({ error: error })
-      // });
+      .catch((error) => {
+        this.setState({error: 'The server is experincing some issues please try  again later?'}) 
+      });
   }
   
   render() {
     return (
       <main className='App'>
-
         <h1> Rotten Tomitillos </h1>
+
         {/* <AllMovies movies={this.state} showMore={this.showMore} /> */}
         {(this.state.selected) ? <SingleView movie={this.state.selected} showAll={this.showAll} /> : <AllMovies movies={this.state} showMore={this.showMore} />}
+
       </main>
     )
   }
