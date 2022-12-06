@@ -35,14 +35,7 @@ class App extends Component {
       .then((response) => response.json())
       .then((data) => { 
         this.setState({ movies: data.movies })
-
       })
-   
-
-
-        
-
-      
       .catch((error) => {
         this.setState({error: 'The server is experincing some issues please try  again later?'}) 
       });
