@@ -40,9 +40,9 @@ class App extends Component {
    
 
 
-        // console.log('the state',this.state)
+        
 
-      })
+      
       .catch((error) => {
         this.setState({error: 'The server is experincing some issues please try  again later?'}) 
       });
@@ -60,6 +60,6 @@ class App extends Component {
       </main>
     )
   }
-
+}
 
 export default App;
