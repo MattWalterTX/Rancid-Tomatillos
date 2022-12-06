@@ -6,7 +6,7 @@ const Info = ({ movie, showAll, makeDate }) => {
     <div className='info'>
       <h3>Movie Details Here</h3>
       <h3>Title: {movie.title}</h3>
-      <h3>Average Rating: {movie.average_rating}</h3>
+      <h3>Average Rating: {movie.average_rating.toFixed(1)}</h3>
       <h3>Release Date: {makeDate(movie.release_date)}</h3>
       <button className='return-button' onClick={showAll}>Return</button>
     </div>
