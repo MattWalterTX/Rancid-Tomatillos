@@ -5,7 +5,7 @@ import './DetailContainer.css'
 import movieData from '../movieData';
 
 
-const DetailContainer = (props) => {
+const DetailContainer = (props, showAll) => {
 
   const makeDateDisplay = (release) => {
     const dateNums = release.split("-");
@@ -18,7 +18,7 @@ const DetailContainer = (props) => {
     <div className='movie-container' style={{
       backgroundImage: 'url(' + props.movie.movie.backdrop_path + ')'
     }}>
-      <Info movie={props} makeDate={makeDateDisplay} />
+      <Info movie={props} makeDate={makeDateDisplay} showAll={showAll}/>
     </div>
   )
 }
