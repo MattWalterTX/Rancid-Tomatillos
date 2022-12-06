@@ -1,11 +1,11 @@
-@import url('https: //fonts.googleapis.com/css?family=Notable:400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 .info {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Russo One', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
-  color: rgba(205, 188, 32);
+  font-size: 2em;
+  color: rgb(254, 165, 0);
   -webkit-text-stroke: 1px black;
 }
 

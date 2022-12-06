@@ -45,8 +45,12 @@ class App extends Component {
   render() {
     return (
       <main className='App'>
-
-        <h1> Rotten Tomatillos </h1>
+        <div  style={{
+      backgroundImage: `url("https://www.ruralsprout.com/wp-content/uploads/2021/04/tomato-blight-late-spoiled-720x465.jpg.webp")`
+    }}>
+      <p>Rotten Tomatillos</p>
+    </div>
+        
 
         {(this.state.selected) ? <SingleView movie={this.state.selected} showAll={this.showAll} /> : <AllMovies movies={this.state} showMore={this.showMore} />}
 
