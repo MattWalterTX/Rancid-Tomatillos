@@ -6,7 +6,6 @@ import movieData from '../movieData';
 
 
 const DetailContainer = ({ movie, showAll }) => {
-console.log(movie)
   const makeDateDisplay = (release) => {
     const dateNums = release.split("-");
     const year = dateNums.shift();

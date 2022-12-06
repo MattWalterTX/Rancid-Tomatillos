@@ -31,11 +31,14 @@ class App extends Component {
   
 
   componentDidMount = () => {
-    // console.log('App, componentDidMount')
     fetch('https://rancid-tomatillos.herokuapp.com/api/v2/movies')
       .then((response) => response.json())
       .then((data) => { 
         this.setState({ movies: data.movies })
+
+      })
+   
+
 
         // console.log('the state',this.state)
 
@@ -43,14 +46,15 @@ class App extends Component {
       .catch((error) => {
         this.setState({error: 'The server is experincing some issues please try  again later?'}) 
       });
+
   }
   
   render() {
     return (
       <main className='App'>
-        <h1> Rotten Tomitillos </h1>
 
-        {/* <AllMovies movies={this.state} showMore={this.showMore} /> */}
+        <h1> Rotten Tomatillos </h1>
+
         {(this.state.selected) ? <SingleView movie={this.state.selected} showAll={this.showAll} /> : <AllMovies movies={this.state} showMore={this.showMore} />}
 
       </main>
