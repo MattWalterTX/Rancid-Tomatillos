@@ -10,29 +10,35 @@ class App extends Component {
     super();
     this.state = {
       movies:[],
-       error:null
+
+      error:null,
+      selected: null
+
     }
     
   }
 
   showMore = (id) => {
-    const selectedMovie = this.state.movies.filter(movie => movie.id === id)
-    this.setState({movies: selectedMovie})
-    // render() {
-    //   return (
-    //   <SingleView />
-    //   )
-    // }
+    const selectedMovie = this.state.movies.find(movie => movie.id === id)
+    this.setState({ selected: selectedMovie })
+  }
+
+  showAll = () => {
+    console.log('SHIT SHIT SHIT')
+    this.setState({ selected: null })
   }
 
   
 
   componentDidMount = () => {
-    console.log('App, componentDidMount')
+    // console.log('App, componentDidMount')
     fetch('https://rancid-tomatillos.herokuapp.com/api/v2/movies')
       .then((response) => response.json())
       .then((data) => { 
         this.setState({ movies: data.movies })
+
+        // console.log('the state',this.state)
+
       })
       .catch((error) => {
         this.setState({error: 'The server is experincing some issues please try  again later?'}) 
@@ -43,9 +49,10 @@ class App extends Component {
     return (
       <main className='App'>
         <h1> Rotten Tomitillos </h1>
-        {this.state.error && <h2>{this.state.error}</h2>}
-        <AllMovies movies={this.state} showMore={this.showMore} />
-        {(this.state.movies.length === 1) && <SingleView movie={this.state.movies[0]} />}
+
+        {/* <AllMovies movies={this.state} showMore={this.showMore} /> */}
+        {(this.state.selected) ? <SingleView movie={this.state.selected} showAll={this.showAll} /> : <AllMovies movies={this.state} showMore={this.showMore} />}
+
       </main>
     )
   }
