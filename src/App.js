@@ -48,12 +48,9 @@ class App extends Component {
         <div  style={{
       backgroundImage: `url("https://www.ruralsprout.com/wp-content/uploads/2021/04/tomato-blight-late-spoiled-720x465.jpg.webp")`
     }}>
-      <p>Rotten Tomatillos</p>
+      <p className='title'>Rancid Tomatillos</p>
     </div>
-        
-
         {(this.state.selected) ? <SingleView movie={this.state.selected} showAll={this.showAll} /> : <AllMovies movies={this.state} showMore={this.showMore} />}
-
       </main>
     )
   }
