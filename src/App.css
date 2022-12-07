@@ -19,3 +19,8 @@ p {
   background-color: #564d4d;
 }
 
+.errorMessage {
+  font-size: x-large;
+  color: antiquewhite;
+}
+

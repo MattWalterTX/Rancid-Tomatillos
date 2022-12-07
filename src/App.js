@@ -31,7 +31,7 @@ class App extends Component {
   
 
   componentDidMount = () => {
-    fetch('https://rancid-tomatillos.herokuapp.com/api/v2/movies')
+    fetch('https://rancid-tomatillos.herokuapp.com/api/v2/movie')
       .then((response) => response.json())
       .then((data) => { 
         this.setState({ movies: data.movies })
@@ -49,6 +49,7 @@ class App extends Component {
       backgroundImage: `url("https://www.ruralsprout.com/wp-content/uploads/2021/04/tomato-blight-late-spoiled-720x465.jpg.webp")`
     }}>
       <p className='title'>Rancid Tomatillos</p>
+      {this.state.error && <h2 className='errorMessage'>{this.state.error}</h2>}
     </div>
         {(this.state.selected) ? <SingleView movie={this.state.selected} showAll={this.showAll} /> : <AllMovies movies={this.state} showMore={this.showMore} />}
       </main>
