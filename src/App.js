@@ -3,6 +3,7 @@ import MovieTile from './MovieTile/MovieTile'
 import AllMovies from './AllMovies/AllMovies';
 import SingleView from './SingleView/SingleView';
 import movieData from './movieData';
+import { Route, NavLink } from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
@@ -51,10 +52,16 @@ class App extends Component {
       <p className='title'>Rancid Tomatillos</p>
       {this.state.error && <h2 className='errorMessage'>{this.state.error}</h2>}
     </div>
-        {(this.state.selected) ? <SingleView movie={this.state.selected} showAll={this.showAll} /> : <AllMovies movies={this.state} showMore={this.showMore} />}
+        <Route exact path='/' render={() => <AllMovies movies={this.state} showMore={this.showMore} />} />
+        <Route exact path="/:id" render={({ match }) => {
+          const movieToRender = this.state.movies.find(movie => movie.id === parseInt(match.params.id));
+          return <SingleView movie={movieToRender} showAll={this.showAll} />
+        }}
+        />
+        {/* {(this.state.selected) ? <SingleView movie={this.state.selected} showAll={this.showAll} /> : <AllMovies movies={this.state} showMore={this.showMore} />} */}
       </main>
     )
-  }
+  }       
 }
 
 export default App;
