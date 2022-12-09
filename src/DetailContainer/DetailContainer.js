@@ -29,18 +29,18 @@ class DetailContainer extends Component {
     .then((data) => {
       console.log('data: ', data)
       this.setState({ 
-        id: this.props.movie.id,
-        title: this.props.movie.title,
-        poster_path: this.props.movie.poster_path,
-        backdrop_path: this.props.movie.backdrop_path,
-        release_date: this.props.movie.release_date,
-        overview: this.props.movie.overview,
-        genres: this.props.movie.genres,
-        budget: this.props.movie.budget,
-        revenue: this.props.movie.revenue,
-        runtime: this.props.movie.runtime,
-        tagline: this.props.movie.tagline,
-        average_rating: this.props.movie.average_rating
+        id: data.movie.id,
+        title: data.movie.title,
+        poster_path: data.movie.poster_path,
+        backdrop_path: data.movie.backdrop_path,
+        release_date: data.movie.release_date,
+        overview: data.movie.overview,
+        genres: data.movie.genres,
+        budget: data.movie.budget,
+        revenue: data.movie.revenue,
+        runtime: data.movie.runtime,
+        tagline: data.movie.tagline,
+        average_rating: data.movie.average_rating
       })
     })
   }
@@ -58,7 +58,9 @@ class DetailContainer extends Component {
         backgroundImage: 'url(' + this.props.backdrop_path + ')'
       }}>
         {console.log('props: ', this.props)}
-        <Info movie={this.props} makeDate={this.makeDateDisplay} showAll={this.showAll}/>
+        {console.log('state: ', this.state)}
+
+        <Info movie={this.state} makeDate={this.makeDateDisplay} showAll={this.showAll}/>
       </div>
     )
   }
