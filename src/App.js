@@ -49,7 +49,8 @@ class App extends Component {
         <div  style={{
       backgroundImage: `url("https://www.ruralsprout.com/wp-content/uploads/2021/04/tomato-blight-late-spoiled-720x465.jpg.webp")`
     }}>
-      <p className='title'>Rancid Tomatillos</p>
+      {/* <p className='title'>Rancid Tomatillos</p> */}
+          <img className='site-title' src='./coollogo_com-283914743.png' ></img>
       {this.state.error && <h2 className='errorMessage'>{this.state.error}</h2>}
     </div>
         <Route exact path='/' render={() => <AllMovies movies={this.state} showMore={this.showMore} />} />
