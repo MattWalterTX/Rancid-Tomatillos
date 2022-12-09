@@ -1,5 +1,5 @@
 .single-view {
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-position: center;
   background-size: 100%;
   contain: content;

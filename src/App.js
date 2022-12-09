@@ -56,6 +56,7 @@ class App extends Component {
         <Route exact path='/' render={() => <AllMovies movies={this.state} showMore={this.showMore} />} />
         <Route exact path="/:id" render={({ match }) => {
           const movieToRender = this.state.movies.find(movie => movie.id === parseInt(match.params.id));
+          // console.log('MtR.id: ', movieToRender.id)
           return <SingleView movie={movieToRender} showAll={this.showAll} />
         }}
         />
