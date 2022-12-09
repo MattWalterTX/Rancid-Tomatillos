@@ -1,8 +1,6 @@
 import React, { Component } from "react"
-import MovieTile from "../MovieTile/MovieTile"
 import Info from "../Info/Info"
 import './DetailContainer.css'
-import movieData from '../movieData';
 
 class DetailContainer extends Component {
   constructor() {
@@ -67,29 +65,3 @@ class DetailContainer extends Component {
 }
 
 export default DetailContainer
-
-
-
-
-
-// // update component to class comp
-// const DetailContainer = ({ movie, showAll }) => {
-//   const makeDateDisplay = (release) => {
-//     const dateNums = release.split("-");
-//     const year = dateNums.shift();
-//     dateNums.push(year);
-//     return dateNums.join('~');
-//   };
-
-//   // add the Thing here (compDidMount to get movie data by id)
-
-//   return (
-//     <div className='movie-container' style={{
-//       backgroundImage: 'url(' + movie.backdrop_path + ')'
-//     }}>
-//       <Info movie={movie} makeDate={makeDateDisplay} showAll={showAll}/>
-//     </div>
-//   )
-// }
-
-// export default DetailContainer
