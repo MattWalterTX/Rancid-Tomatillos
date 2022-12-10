@@ -1,6 +1,6 @@
 
 .movie-container {
-  align-items: center;
+  /* align-items: center; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
@@ -9,4 +9,12 @@
   justify-content: center;
   max-height: 60%;
   width: 90%;
+
+  margin: 4px, 4px;
+  padding: 4px;
+  width: 80%px;
+  height: 55%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* text-align: justify; */
 }

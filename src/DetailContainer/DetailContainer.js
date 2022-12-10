@@ -53,7 +53,7 @@ class DetailContainer extends Component {
   render() {
     return (
       <div className='movie-container' style={{
-        backgroundImage: 'url(' + this.props.backdrop_path + ')'
+        backgroundImage: 'url(' + this.state.backdrop_path + ')'
       }}>
         {console.log('props: ', this.props)}
         {console.log('state: ', this.state)}
