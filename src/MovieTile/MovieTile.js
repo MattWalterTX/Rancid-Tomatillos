@@ -1,6 +1,7 @@
-import React from 'react';
+import React from 'react'
 import './MovieTile.css'
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
+
 const MovieTile = ({id , poster, showMore}) => {
   return (
     <div className='movie-tile'  >
@@ -12,4 +13,4 @@ const MovieTile = ({id , poster, showMore}) => {
   )
 }
 
-export default MovieTile;
+export default MovieTile

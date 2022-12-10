@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
-import MovieTile from './MovieTile/MovieTile'
 import AllMovies from './AllMovies/AllMovies'
 import SingleView from './SingleView/SingleView'
-import movieData from './movieData'
 import { Route, NavLink } from 'react-router-dom'
 import './App.css'
 
 class App extends Component {
   constructor() {
-    super();
+    super()
     this.state = {
       movies:[],
       error:null,
@@ -22,7 +20,6 @@ class App extends Component {
   }
 
   showAll = () => {
-    console.log('SHIT SHIT SHIT')
     this.setState({ selected: null })
   }
 
@@ -33,14 +30,14 @@ class App extends Component {
         this.setState({ movies: data.movies })
       })
       .catch((error) => {
-        this.setState({error: 'The server is experincing some issues please try  again later?'}) 
+        this.setState({error: 'The server is experiencing some issues please try  again later?'}) 
       });
   }
   
   render() {
     return (
       <main className='App'>
-        <div  style={{
+        <div style={{
       backgroundImage: `url("https://www.ruralsprout.com/wp-content/uploads/2021/04/tomato-blight-late-spoiled-720x465.jpg.webp")`
     }}>
           <img className='site-title' src='./coollogo_com-283914743.png' ></img>

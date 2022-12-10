@@ -44,20 +44,17 @@ class DetailContainer extends Component {
   }
 
   makeDateDisplay = (release) => {
-    const dateNums = release.split("-");
-    const year = dateNums.shift();
-    dateNums.push(year);
-    return dateNums.join('~');
-  };
+    const dateNums = release.split("-")
+    const year = dateNums.shift()
+    dateNums.push(year)
+    return dateNums.join('~')
+  }
 
   render() {
     return (
       <div className='movie-container' style={{
         backgroundImage: 'url(' + this.state.backdrop_path + ')'
       }}>
-        {console.log('props: ', this.props)}
-        {console.log('state: ', this.state)}
-
         <Info movie={this.state} makeDate={this.makeDateDisplay} showAll={this.showAll}/>
       </div>
     )
