@@ -10,8 +10,6 @@ p {
   margin: 10px;
 }
 
-
-
 .App {
   display: flex;
   flex-direction: column;
@@ -23,4 +21,3 @@ p {
   font-size: x-large;
   color: antiquewhite;
 }
-

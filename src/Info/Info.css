@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 .info {
+
     align-content: stretch;
       display: flex;
       font-family: 'Russo One', sans-serif;
@@ -43,7 +44,7 @@ h3, h2 {
   height: 48px;
  margin-left: 435px; 
 margin-bottom: 7vh;
-}
+
 
  .return-button:hover {
   transform: scale(1.04);
@@ -56,6 +57,12 @@ font-family: 'Russo One', sans-serif;
   font-size: 18px;
   color: rgb(80, 66, 66);
   margin: 5px;
+  background-color: rgb(109, 132, 121);
+  opacity: 80%;
+}
+
+div {
+  font-size: .95em;
 }
 
 .movie-photo {

@@ -1,11 +1,12 @@
 import React from "react"
 import './Info.css'
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 
 const Info = ({ movie, showAll, makeDate }) => {
 
   return (
     <div className='info'>
+
       <h2 className='title-header'> {movie.title}</h2>
       <h3>{movie.tagline}</h3>
       <p className="movie-info">{movie.overview}</p>
