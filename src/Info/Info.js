@@ -1,6 +1,6 @@
 import React from "react"
 import './Info.css'
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 
 const Info = ({ movie, showAll, makeDate }) => {
 
@@ -16,7 +16,7 @@ const Info = ({ movie, showAll, makeDate }) => {
       </h3>
       <h3>
         <div>AVG RATING: {movie.average_rating}</div>
-      <h3>RUNTIME: {movie.runtime}</h3>
+        <div>RUNTIME: {movie.runtime}</div>
       </h3>
       <h3>{movie.tagline}</h3>
       <NavLink to='/'><button className='return-button' onClick={showAll}>Return</button></NavLink>

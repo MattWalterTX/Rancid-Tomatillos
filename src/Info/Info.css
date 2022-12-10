@@ -2,18 +2,22 @@
 
 .info {
   align-content: center;
-  color: rgb(0, 0, 0);
+  color: rgb(84, 175, 70);
   font-family: 'Russo One', sans-serif;
   font-size: 1.1em;
   font-style: normal;
   font-weight: 400;
   max-height: 30%;
   max-width: 80%;
-  -webkit-text-stroke: 1px rgb(77,
-    192,
-    0);
+  -webkit-text-stroke: .1px rgb(0, 0, 0);
 }
 
 h3 {
   margin: 5px;
+  background-color: rgb(109, 132, 121);
+  opacity: 80%;
+}
+
+div {
+  font-size: .95em;
 }
