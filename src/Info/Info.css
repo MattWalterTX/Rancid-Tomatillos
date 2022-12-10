@@ -17,7 +17,8 @@
 }
 
 h3, h2 {
-  margin: 5px;
+  margin-top: 19px;
+  margin-bottom: 7px;
 }
 
 .return-button {
@@ -38,14 +39,15 @@ h3, h2 {
   text-align: center;
   padding: 17px 48px;
   color: #fff;
-  background-color: #831010;
+  background-color: #564d4d;;
   height: 48px;
- margin-left: 435px;                    
+ margin-left: 435px; 
+margin-bottom: 7vh;
 }
 
  .return-button:hover {
   transform: scale(1.04);
-  background-color: #db0000;
+  background-color: #817d7d;;
   }
 
 .movie-info {
@@ -57,7 +59,13 @@ font-family: 'Russo One', sans-serif;
 }
 
 .movie-photo {
-  height: 10%;
-  width: 10%;
+    height: 50vh;
+      width: 45vw;
+      margin-left: 26vw;
+      margin-bottom: 3vh;
+      margin-top: -42vh;
 }
 
+.title-header {
+  margin-top:7vh;
+}
