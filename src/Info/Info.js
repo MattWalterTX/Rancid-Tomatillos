@@ -1,14 +1,24 @@
-import React, { Component } from "react"
+import React from "react"
 import './Info.css'
 import { NavLink } from 'react-router-dom';
 
 const Info = ({ movie, showAll, makeDate }) => {
+
   return (
     <div className='info'>
-      {/* <h3>Movie Details Here</h3> */}
-      <h3>Title: {movie.title}</h3>
-      <h3>Average Rating: {movie.average_rating.toFixed(1)}</h3>
-      <h3>Release Date: {makeDate(movie.release_date)}</h3>
+      <h3>TITLE: {movie.title}</h3>
+      <h3>{movie.overview}</h3>
+      <h3>GENRES: {movie.genres.join(', ')}</h3>
+      <h3>
+        <div>BUDGET: {movie.budget}</div>
+        <div>RELEASED: {makeDate(movie.release_date)}</div>
+        <div>REVENUE: {movie.revenue}</div>
+      </h3>
+      <h3>
+        <div>AVG RATING: {movie.average_rating}</div>
+      <h3>RUNTIME: {movie.runtime}</h3>
+      </h3>
+      <h3>{movie.tagline}</h3>
       <NavLink to='/'><button className='return-button' onClick={showAll}>Return</button></NavLink>
     </div>
   )
