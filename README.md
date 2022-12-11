@@ -19,7 +19,7 @@
 - ![Cyrpess](https://img.shields.io/badge/cypress-%1004E9F.svg?style=for-the-badge&logo=cypress&logoColor=%23F7DF1E)
 
 ## Illustrations
-![Screenshot 2022-11-15 at 11 47 45 AM](https://user-images.githubusercontent.com/106847513/201992298-8492643f-0ff5-4732-befa-4c1785e33d84.png)
+![Screenshot name](url)
 
 ## Features
 - Displays all movies by their posters
@@ -28,13 +28,14 @@
 - 60% accessibility score on Lighthouse and app is fully tabbable
 
 ## Possible Future Extensions
-- Live dynamic searching
+- Live dynamic searching of movies by title
+- Would also like to extend this to include a genre filtering search
 
 #### Milestones
 - This project has given us more exposure to React and Router that we were able to apply and test with Cyrpess to ensure a better UX 
 
 #### Challenges 
--  
+- Deployment was oddly more complicated than we envisioned. It pointed out an odd type error we missed on our locals where it tried to process the yet un-selected movie id which prevented anything from loading upon deployment.
 
 ## Set Up
 1. Clone the repo
