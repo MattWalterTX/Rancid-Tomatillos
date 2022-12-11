@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Rancid Tomatillos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Abstract
+- Multi-page React application that pulls movies from an external API that we can select to view more details.
 
-## Available Scripts
+#### Goals and Objectives
 
-In the project directory, you can run:
+- Implement React and Router to turn our vanilla Javascript app into a true multi-page application
+- Work with an API to render data from multiple specified endpoints
+- Solidify the code review process
+- Create a robust Cypress test suite that thoroughly tests all user stories
 
-### `npm start`
+## Technologies
+- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+- ![React]
+- ![Router]
+- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+- ![Cyrpess]
+- ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+- ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Illustrations
+![Screenshot 2022-11-15 at 11 47 45 AM](https://user-images.githubusercontent.com/106847513/201992298-8492643f-0ff5-4732-befa-4c1785e33d84.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
+- Displays all movies by their posters
+- Selecting a movie navigates to a new page with more details for that movie
+- Can return to the home page via the on page button or use of the browser navigation arrows.
+- 60% accessibility score on Lighthouse and app is fully tabbable
 
-### `npm test`
+## Possible Future Extensions
+- Live dynamic searching
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Milestones
+- This project has given us more exposure to React and Router that we were able to apply and test with Cyrpess to ensure a better UX 
 
-### `npm run build`
+#### Challenges 
+-  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Set Up
+1. Clone the repo
+   ```sh
+   git clone git@github.com:MattWalterTX/Overlook-Project.git
+   ```
+2. Enter the directory and install NPM packages
+   ```sh
+   npm install
+   npm start
+   ``` 
+3. Enter the following url in your browser: http://localhost:3000/
+4. Explore the website
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Sources
+  - [MDN](http://developer.mozilla.org/en-US/)
+  - [YouTube](https://www.youtube.com/)
+  - [Canva](https://www.canva.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributors
+  = [Thomas Peterson)(https://github.com/thomedpete)
+  - [Matt Walter](https://github.com/MattWalterTX)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Specs
+  - The project spec & rubric can be found [here](https://frontend.turing.edu/projects/module-3/rancid-tomatillos-v3.html)
