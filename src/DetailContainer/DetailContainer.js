@@ -25,7 +25,6 @@ class DetailContainer extends Component {
     fetch(`https://rancid-tomatillos.herokuapp.com/api/v2/movies/${this.props.movie.id}`)
     .then((response) => response.json())
     .then((data) => {
-      console.log('data: ', data)
       this.setState({ 
         id: data.movie.id,
         title: data.movie.title,

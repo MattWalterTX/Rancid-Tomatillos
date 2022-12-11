@@ -11,6 +11,7 @@ const AllMovies = ({movies, showMore}) => {
         id={movie.id}
         key={movie.id}
         showMore={showMore}
+        title={movie.title}
       />
     )
   })
