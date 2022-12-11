@@ -6,22 +6,22 @@ const Info = ({ movie, showAll, makeDate }) => {
 
   return (
     <div className='info'>
-      <h3>TITLE: {movie.title}</h3>
-      <h3>{movie.overview}</h3>
-      <h3>GENRES: {movie.genres.join(', ')}</h3>
-      <h3>
-        <div>BUDGET: {movie.budget}</div>
-        <div>RELEASED: {makeDate(movie.release_date)}</div>
-        <div>REVENUE: {movie.revenue}</div>
-      </h3>
-      <h3>
-        <div>AVG RATING: {movie.average_rating}</div>
-        <div>RUNTIME: {movie.runtime}</div>
-      </h3>
+
+      <h2 className='title-header'> {movie.title}</h2>
       <h3>{movie.tagline}</h3>
-      <NavLink to='/'><button className='return-button' onClick={showAll}>Return</button></NavLink>
+      <p className="movie-info">{movie.overview}</p>
+      <span className="info-heading">GENRES:</span><p className="movie-info"> {movie.genres.join(', ')}</p>
+      <span className="info-heading" >BUDGET:</span><p className="movie-info"> {movie.budget}</p>
+      <span className="info-heading" >RELEASED:</span><p className="movie-info"> {makeDate(movie.release_date)}</p>
+      <span className="info-heading" >REVENUE:</span> <p className="movie-info">{movie.revenue}</p>
+      <span className="info-heading" >AVG RATING:</span><p className="movie-info">  {movie.average_rating}</p>
+      <span className="info-heading">RUNTIME:</span><p className="movie-info"> {movie.runtime}</p>
+      <img className="movie-photo" src={movie.backdrop_path}></img>
+      <NavLink to='/'><button className='return-button' onClick={showAll}>HOME</button></NavLink>
     </div>
-  )
+  ) 
+   
+  
 }
 
 export default Info

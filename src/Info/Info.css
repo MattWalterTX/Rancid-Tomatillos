@@ -1,18 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 .info {
-  align-content: center;
-  color: rgb(84, 175, 70);
-  font-family: 'Russo One', sans-serif;
-  font-size: 1.1em;
-  font-style: normal;
-  font-weight: 400;
-  max-height: 30%;
-  max-width: 80%;
-  -webkit-text-stroke: .1px rgb(0, 0, 0);
+
+    align-content: stretch;
+      display: flex;
+      font-family: 'Russo One', sans-serif;
+      font-size: 1.1em;
+      font-style: normal;
+      font-weight: 400;
+      max-height: 30%;
+      max-width: 80%;
+      /* -webkit-text-stroke: 1px rgb(77, 192, 0); */
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: flex-start;
 }
 
-h3 {
+h3, h2 {
+  margin-top: 19px;
+  margin-bottom: 7px;
+}
+
+.return-button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 17px 48px;
+  color: #fff;
+  background-color: #564d4d;;
+  height: 48px;
+ margin-left: 435px; 
+margin-bottom: 7vh;
+
+
+ .return-button:hover {
+  transform: scale(1.04);
+  background-color: #817d7d;;
+  }
+
+.movie-info {
+font-family: 'Russo One', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  color: rgb(80, 66, 66);
   margin: 5px;
   background-color: rgb(109, 132, 121);
   opacity: 80%;
@@ -20,4 +63,16 @@ h3 {
 
 div {
   font-size: .95em;
+}
+
+.movie-photo {
+    height: 50vh;
+      width: 45vw;
+      margin-left: 26vw;
+      margin-bottom: 3vh;
+      margin-top: -42vh;
+}
+
+.title-header {
+  margin-top:7vh;
 }

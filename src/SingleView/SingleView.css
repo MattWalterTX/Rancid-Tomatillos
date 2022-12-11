@@ -6,7 +6,7 @@
   background-size: 100%;
   contain: content;
   display: flex;
-  height: 77vh;
+  height: 100%;
   justify-content: center;
   width: 102vw;
 }
