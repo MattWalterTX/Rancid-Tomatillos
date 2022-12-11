@@ -52,9 +52,7 @@ class DetailContainer extends Component {
 
   render() {
     return (
-      <div className='movie-container' style={{
-        backgroundImage: 'url(' + this.state.backdrop_path + ')'
-      }}>
+      <div className='movie-container'>
         <Info movie={this.state} makeDate={this.makeDateDisplay} showAll={this.showAll}/>
       </div>
     )

@@ -44,8 +44,7 @@ h3, h2 {
   height: 48px;
  margin-left: 435px; 
 margin-bottom: 7vh;
-
-
+}
  .return-button:hover {
   transform: scale(1.04);
   background-color: #817d7d;;
@@ -57,7 +56,6 @@ font-family: 'Russo One', sans-serif;
   font-size: 18px;
   color: rgb(80, 66, 66);
   margin: 5px;
-  background-color: rgb(109, 132, 121);
   opacity: 80%;
 }
 
@@ -70,7 +68,7 @@ div {
       width: 45vw;
       margin-left: 26vw;
       margin-bottom: 3vh;
-      margin-top: -42vh;
+      margin-top: -36vh;
 }
 
 .title-header {
