@@ -12,11 +12,11 @@
 
 ## Technologies
 - ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-   - ![React](https://img.shields.io/badge/React-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-   - ![Router](https://img.shields.io/badge/Router-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+   - ![React](https://img.shields.io/badge/react-%23323330.svg?style=for-the-badge&logo=react&logoColor=%23F7DF1E)
+   - ![Router](https://img.shields.io/badge/router-%23323330.svg?style=for-the-badge&logo=router&logoColor=%CA4245)
 - ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 - ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-- ![Cyrpess](https://bestofjs.org/logos/cypress.dark.svg)
+- ![Cyrpess](https://img.shields.io/badge/cypress-%17202C.svg?style=for-the-badge&logo=cypress&logoColor=%23F7DF1E)
 - ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 - ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 
@@ -57,7 +57,7 @@
   - [Canva](https://www.canva.com/)
 
 ## Contributors
-  = [Thomas Peterson)(https://github.com/thomedpete)
+  - [Thomas Peterson](https://github.com/thomedpete)
   - [Matt Walter](https://github.com/MattWalterTX)
 
 ## Project Specs
