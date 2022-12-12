@@ -16,20 +16,6 @@ describe('Homepage', () => {
       .get('.single-view')
   });
 
-  it('Should be able to see more info', () => {
-    cy.get('#436270').click()
-    cy.get('.single-view')
-      .get('.info')
-  });
-
-  it('Should be able to click a button and go home', () => {
-    cy.get('#436270').click()
-    cy.get('.single-view')
-      .get('.info')
-      .get('.return-button').click()
-    cy.get('.all-movies')
-  });
-
   it('Should go back to home page when back button on browser is clicked', () => {
     cy.get('#436270').click()
     cy.go('back')
