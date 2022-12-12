@@ -27,6 +27,7 @@ class App extends Component {
     fetch('https://rancid-tomatillos.herokuapp.com/api/v2/movies')
       .then((response) => response.json())
       .then((data) => { 
+        console.log('this is data',data)
         this.setState({ movies: data.movies })
       })
       .catch((error) => {
