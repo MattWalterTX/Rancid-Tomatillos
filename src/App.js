@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import AllMovies from './AllMovies/AllMovies'
 import SingleView from './SingleView/SingleView'
 import { Route, Switch } from 'react-router-dom'
+import NotFound from './NotFound/NotFound'
 import './App.css'
 
 class App extends Component {
@@ -49,11 +50,13 @@ class App extends Component {
           <Route exact path="/:id" render={({ match }) => {
             const movieToRender = this.state.movies.find(movie => movie.id === parseInt(match.params.id))
             if(!movieToRender) {
-              return null
+              // need to add a way to return a 404 here maybe? if bad address, which equals undef data
+              return null, <NotFound />
             }
             return <SingleView movie={movieToRender} showAll={this.showAll} />
-          }}
+            }}
           />
+          {/* <Route component={NotFound} /> */}
         </Switch>
       </main>
     )
