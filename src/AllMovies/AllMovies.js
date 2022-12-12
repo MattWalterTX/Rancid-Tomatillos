@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import MovieTile from '../MovieTile/MovieTile'
 import './AllMovies.css'
 
@@ -24,3 +25,7 @@ const AllMovies = ({movies, showMore}) => {
 }
 
 export default AllMovies
+AllMovies.propTypes = {
+  movies: PropTypes.object,
+  showMore: PropTypes.func
+};

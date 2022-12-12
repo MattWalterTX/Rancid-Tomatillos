@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from 'prop-types';
 import './Info.css'
 import { NavLink } from 'react-router-dom'
 
@@ -25,3 +26,8 @@ const Info = ({ movie, showAll, makeDate }) => {
 }
 
 export default Info
+Info.propTypes = {
+  showAll: PropTypes.func,
+  movie: PropTypes.object,
+  makeDate: PropTypes.func
+}

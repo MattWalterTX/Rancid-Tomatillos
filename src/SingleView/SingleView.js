@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from 'prop-types';
 import DetailContainer from "../DetailContainer/DetailContainer"
 import "./SingleView.css"
 
@@ -12,3 +13,7 @@ const SingleView = ({ movie, showAll }) => {
 }
 
 export default SingleView
+SingleView.propTypes = {
+  showAll: PropTypes.func,
+  movie: PropTypes.object
+}

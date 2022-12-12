@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import './MovieTile.css'
 import { NavLink } from 'react-router-dom'
 
@@ -14,3 +15,10 @@ const MovieTile = ({id , poster, showMore, title}) => {
 }
 
 export default MovieTile
+
+MovieTile.propTypes = {
+  id: PropTypes.number,
+  poster: PropTypes.string,
+  showMore: PropTypes.func,
+  title: PropTypes.string
+}
