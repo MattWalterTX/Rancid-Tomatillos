@@ -19,7 +19,10 @@
 - ![Cyrpess](https://img.shields.io/badge/cypress-%1004E9F.svg?style=for-the-badge&logo=cypress&logoColor=%23F7DF1E)
 
 ## Illustrations
-![Screenshot name](url)
+
+![Screenshot 2022-12-12 at 2 18 27 PM](https://user-images.githubusercontent.com/106847513/207146246-89aa053c-2fd7-4602-9000-9d17834e418b.png)
+
+![Screenshot 2022-12-12 at 2 18 53 PM](https://user-images.githubusercontent.com/106847513/207146297-202adb10-3b54-4cac-80f6-dbc2b99b1b6a.png)
 
 ## Features
 - Displays all movies by their posters
@@ -38,6 +41,9 @@
 - Deployment was oddly more complicated than we envisioned. It pointed out an odd type error we missed on our locals where it tried to process the yet un-selected movie id which prevented anything from loading upon deployment.
 
 ## Set Up
+
+### Locally
+
 1. Clone the repo
    ```sh
    git clone git@github.com:MattWalterTX/Overlook-Project.git
@@ -50,9 +56,13 @@
 3. Enter the following url in your browser: http://localhost:3000/
 4. Explore the website
 
+### Deployed at
+   
+[Rancid Tomatillos on Surge](https://racid-tomatillos.surge.sh/)
+
 ## Sources
-  - [MDN](http://developer.mozilla.org/en-US/)
-  - [YouTube](https://www.youtube.com/)
+  - [Plex](http://www.plex.tv/)
+  - [Netflix](http://www.netflix.com)
   - [Canva](https://www.canva.com/)
 
 ## Contributors
