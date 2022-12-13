@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import AllMovies from './AllMovies/AllMovies'
 import SingleView from './SingleView/SingleView'
 import { Route, Switch } from 'react-router-dom'
+import NotFound from './NotFound/NotFound'
 import './App.css'
 
 class App extends Component {
@@ -27,7 +28,6 @@ class App extends Component {
     fetch('https://rancid-tomatillos.herokuapp.com/api/v2/movies')
       .then((response) => response.json())
       .then((data) => { 
-        console.log('this is data',data)
         this.setState({ movies: data.movies })
       })
       .catch((error) => {
@@ -49,10 +49,10 @@ class App extends Component {
           <Route exact path="/:id" render={({ match }) => {
             const movieToRender = this.state.movies.find(movie => movie.id === parseInt(match.params.id))
             if(!movieToRender) {
-              return null
+              return null, <NotFound showAll={this.showAll} />
             }
             return <SingleView movie={movieToRender} showAll={this.showAll} />
-          }}
+            }}
           />
         </Switch>
       </main>

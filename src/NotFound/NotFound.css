@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.not-found {
+  align-content: stretch;
+  align-items: center;
+  background-image: url('./service_attic.png');
+  background-size: cover;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: 400;
+  height: 80vh;
+  justify-content: space-evenly;
+  -webkit-text-stroke: 1px rgb(77, 192, 0);
+}
+
+.error-return-button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 17px 48px;
+  color: #fff;
+  background-color: #510202;
+  ;
+  height: 48px;
+  margin-left: 1px;
+  margin-bottom: 7vh;
+}
+
+.error-return-button:hover {
+  transform: scale(1.04);
+  background-color: #0f7e03;
+  ;
+}

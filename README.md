@@ -22,13 +22,13 @@
 
 ![Screenshot 2022-12-12 at 2 18 27 PM](https://user-images.githubusercontent.com/106847513/207146246-89aa053c-2fd7-4602-9000-9d17834e418b.png)
 
-![Screenshot 2022-12-12 at 2 18 53 PM](https://user-images.githubusercontent.com/106847513/207146297-202adb10-3b54-4cac-80f6-dbc2b99b1b6a.png)
+![Screenshot 2022-12-12 at 5 55 32 PM](https://user-images.githubusercontent.com/106847513/207184950-04b9f7fa-fe50-4c71-a897-8d06004fe9e2.png)
 
 ## Features
 - Displays all movies by their posters
 - Selecting a movie navigates to a new page with more details for that movie
 - Can return to the home page via the on page button or use of the browser navigation arrows.
-- 60% accessibility score on Lighthouse and app is fully tabbable
+- 100% accessibility score on Lighthouse (verified on multiple pages), app is fully tabbable and has been tested with the [Dalton Colorblindness extension](https://chrome.google.com/webstore/detail/colorblind-dalton-for-goo/afcafnelafcgjinkaeohkalmfececool?hl=en) for added accessibility consideration
 
 ## Possible Future Extensions
 - Live dynamic searching of movies by title
