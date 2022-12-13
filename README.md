@@ -20,9 +20,9 @@
 
 ## Illustrations
 
-![Screenshot 2022-12-12 at 2 18 27 PM](https://user-images.githubusercontent.com/106847513/207146246-89aa053c-2fd7-4602-9000-9d17834e418b.png)
+https://user-images.githubusercontent.com/105405396/207199656-be9ba2ba-9a9d-4ebf-a8ff-b0445cd90d58.mov
 
-![Screenshot 2022-12-12 at 5 55 32 PM](https://user-images.githubusercontent.com/106847513/207184950-04b9f7fa-fe50-4c71-a897-8d06004fe9e2.png)
+
 
 ## Features
 - Displays all movies by their posters
@@ -35,7 +35,7 @@
 - Would also like to extend this to include a genre filtering search
 
 #### Milestones
-- This project has given us more exposure to React and Router that we were able to apply and test with Cyrpess to ensure a better UX 
+- This project has given us more exposure to React and Router that we were able to apply and test with Cyrpess to ensure a better UX, it also got us more familer and comfortable with going through the documentation to solve problems. 
 
 #### Challenges 
 - Deployment was oddly more complicated than we envisioned. It pointed out an odd type error we missed on our locals where it tried to process the yet un-selected movie id which prevented anything from loading upon deployment.
