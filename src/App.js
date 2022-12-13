@@ -28,7 +28,6 @@ class App extends Component {
     fetch('https://rancid-tomatillos.herokuapp.com/api/v2/movies')
       .then((response) => response.json())
       .then((data) => { 
-        console.log('this is data',data)
         this.setState({ movies: data.movies })
       })
       .catch((error) => {
@@ -50,13 +49,11 @@ class App extends Component {
           <Route exact path="/:id" render={({ match }) => {
             const movieToRender = this.state.movies.find(movie => movie.id === parseInt(match.params.id))
             if(!movieToRender) {
-              // need to add a way to return a 404 here maybe? if bad address, which equals undef data
-              return null, <NotFound />
+              return null, <NotFound showAll={this.showAll} />
             }
             return <SingleView movie={movieToRender} showAll={this.showAll} />
             }}
           />
-          {/* <Route component={NotFound} /> */}
         </Switch>
       </main>
     )
