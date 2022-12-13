@@ -16,7 +16,7 @@ const Info = ({ movie, showAll, makeDate }) => {
       <span className="info-heading" >REVENUE:</span> <p className="movie-info">{movie.revenue}</p>
       <span className="info-heading" >AVG RATING:</span><p className="movie-info">  {movie.average_rating}</p>
       <span className="info-heading">RUNTIME:</span><p className="movie-info"> {movie.runtime}</p>
-      <img className="movie-photo" src={movie.backdrop_path}></img>
+      <img className="movie-photo" src={movie.backdrop_path} alt={movie.title}></img>
       <NavLink to='/'><button className='return-button' onClick={showAll}>HOME</button></NavLink>
     </div>
   ) 
