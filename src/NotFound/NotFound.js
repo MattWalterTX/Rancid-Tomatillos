@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom"
 import './NotFound.css'
 
@@ -13,3 +14,6 @@ const NotFound = ({showAll}) => {
 }
 
 export default NotFound
+NotFound.propTypes = {
+  showAll: PropTypes.func,
+}
