@@ -38,7 +38,7 @@ https://user-images.githubusercontent.com/105405396/207199656-be9ba2ba-9a9d-4ebf
 - This project has given us more exposure to React and Router that we were able to apply and test with Cyrpess to ensure a better UX, it also got us more familer and comfortable with going through the documentation to solve problems. 
 
 #### Challenges 
-- Deployment was oddly more complicated than we envisioned. It pointed out an odd type error we missed on our locals where it tried to process the yet un-selected movie id which prevented anything from loading upon deployment.
+- Deployment was oddly more complicated than we envisioned. It pointed out an odd type error we missed on our locals where it tried to process the yet un-selected movie id which prevented anything from loading upon deployment. Had more issues working through redeployment, but we ended with what appears to be a clean deployment.
 
 ## Set Up
 
@@ -46,7 +46,7 @@ https://user-images.githubusercontent.com/105405396/207199656-be9ba2ba-9a9d-4ebf
 
 1. Clone the repo
    ```sh
-   git clone git@github.com:MattWalterTX/Overlook-Project.git
+   git clone git@github.com:MattWalterTX/Rancid-Tomatillos.git
    ```
 2. Enter the directory and install NPM packages
    ```sh
